@@ -109,27 +109,5 @@ where
 /// Represents a key sequence.
 pub type KeySequence = InputSequence<KeyChord, ()>;
 
-// pub type ButtonSequence<E> = InputSequence<E, GamepadButtonType>;
 /// Represents a gamepad button sequence.
-// #[derive(Component, Reflect, Clone)]
-// #[reflect(from_reflect = false)]
 pub type ButtonSequence = InputSequence<GamepadButtonType, Gamepad>;
-
-// impl ButtonSequence
-// {
-//     /// Create new button sequence. Not operant until added to an entity.
-//     #[inline(always)]
-//     pub fn new<E>(event: E, acts: impl IntoIterator<Item = GamepadButtonType>) -> ButtonSequence {
-//         todo!()
-//         // ButtonSequence(InputSequence {
-//         //     event: Box::new(|| event.clone()),
-//         //     time_limit: None,
-//         //     acts: Vec::from_iter(acts.into_iter()),
-//         // })
-//     }
-//     /// Specify a time limit from the start of the first matching input.
-//     pub fn time_limit(mut self, time_limit: impl Into<TimeLimit>) -> Self {
-//         self.0.time_limit = Some(time_limit.into());
-//         self
-//     }
-// }
