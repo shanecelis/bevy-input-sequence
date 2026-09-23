@@ -47,4 +47,4 @@ x11 = ["bevy/x11"]
 features = ["x11"]
 
 [patch.crates-io]
-keyseq = { path = "../keyseq" }
+# keyseq = { path = "../keyseq" }
